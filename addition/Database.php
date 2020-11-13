@@ -25,6 +25,11 @@ class Database
 
     private function __construct()
     {
+        $params = Storage::fileToArray('DB');
+        $this->server = $params['server'];
+        $this->database = $params['database'];
+        $this->username = $params['username'];
+        $this->password = $params['password'];
     }
 
     public static function getInstance()

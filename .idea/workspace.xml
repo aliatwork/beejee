@@ -15,33 +15,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addition/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state relative-caret-position="2346">
+              <caret line="156" column="1" lean-forward="true" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
               <folding>
-                <marker date="1605268999315" expanded="true" signature="2937:2996" ph="SELECT id, n... tasks" />
-                <marker date="1605268999315" expanded="true" signature="2937:2997" ph="SELECT id, n... tasks" />
-                <marker date="1605268999315" expanded="true" signature="2937:3015" ph="SELECT id, n... tasks" />
-                <marker date="1605268999315" expanded="true" signature="2937:3016" ph="SELECT id, n... tasks" />
-                <marker date="1605268999315" expanded="true" signature="2937:3030" ph="SELECT id, n... tasks" />
-                <marker date="1605268999315" expanded="true" signature="3112:3150" ph="SELECT COUNT... tasks" />
-                <marker date="1605268999315" expanded="true" signature="3389:3436" ph="INSERT INTO tasks... " />
-                <marker date="1605268999315" expanded="true" signature="3389:3471" ph="INSERT INTO tasks... " />
-                <marker date="1605268999315" expanded="true" signature="3389:3486" ph="INSERT INTO tasks... " />
-                <marker date="1605268999315" expanded="true" signature="3647:3686" ph="UPDATE tasks... " />
-                <marker date="1605268999315" expanded="true" signature="3647:3697" ph="UPDATE tasks... " />
-                <marker date="1605268999315" expanded="true" signature="3647:3698" ph="UPDATE tasks... " />
-                <marker date="1605268999315" expanded="true" signature="3653:3686" ph="INSERT INTO tasks... " />
-                <marker date="1605268999315" expanded="true" signature="3917:3970" ph="UPDATE tasks... " />
-                <marker date="1605268999315" expanded="true" signature="4214:4273" ph="UPDATE tasks... " />
+                <marker date="1605278447280" expanded="true" signature="2937:2996" ph="SELECT id, n... tasks" />
+                <marker date="1605278447280" expanded="true" signature="2937:2997" ph="SELECT id, n... tasks" />
+                <marker date="1605278447280" expanded="true" signature="2937:3015" ph="SELECT id, n... tasks" />
+                <marker date="1605278447280" expanded="true" signature="2937:3016" ph="SELECT id, n... tasks" />
+                <marker date="1605278447280" expanded="true" signature="2937:3030" ph="SELECT id, n... tasks" />
+                <marker date="1605278447280" expanded="true" signature="3112:3150" ph="SELECT COUNT... tasks" />
+                <marker date="1605278447280" expanded="true" signature="3544:3591" ph="INSERT INTO tasks... " />
+                <marker date="1605278447280" expanded="true" signature="3544:3626" ph="INSERT INTO tasks... " />
+                <marker date="1605278447280" expanded="true" signature="3544:3641" ph="INSERT INTO tasks... " />
+                <marker date="1605278447280" expanded="true" signature="3924:3963" ph="UPDATE tasks... " />
+                <marker date="1605278447280" expanded="true" signature="3924:3974" ph="UPDATE tasks... " />
+                <marker date="1605278447280" expanded="true" signature="3924:3975" ph="UPDATE tasks... " />
+                <marker date="1605278447280" expanded="true" signature="3930:3963" ph="INSERT INTO tasks... " />
+                <marker date="1605278447280" expanded="true" signature="4283:4336" ph="UPDATE tasks... " />
+                <marker date="1605278447280" expanded="true" signature="4669:4728" ph="UPDATE tasks... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Storage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Storage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addition/Storage.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -55,12 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>href</find>
-      <find>$paramsText</find>
-      <find>$sortUrlName</find>
-      <find>&amp;</find>
-      <find>?</find>
-      <find>name</find>
       <find>sort</find>
       <find>$sortEmail</find>
       <find>email</find>
@@ -85,6 +79,12 @@
       <find>auth</find>
       <find>Storage::</find>
       <find>UserModel</find>
+      <find>strip_tags</find>
+      <find>$this-&gt;conn-&gt;</find>
+      <find>mysqli_real_escape_string</find>
+      <find>$this-&gt;conn</find>
+      <find>close</find>
+      <find>$this-&gt;connect();</find>
     </findStrings>
     <replaceStrings>
       <replace>$this-&gt;actions</replace>
@@ -92,6 +92,8 @@
       <replace>$controllerTemplate</replace>
       <replace>$modelTemplate</replace>
       <replace>/admin?</replace>
+      <replace>mysqli_real_escape_string(strip_tags</replace>
+      <replace>$this-&gt;conn-&gt;real_escape_string</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -141,8 +143,8 @@
         <option value="$PROJECT_DIR$/addition/Helper.php" />
         <option value="$PROJECT_DIR$/controller/AdminController.php" />
         <option value="$PROJECT_DIR$/storage/DB" />
-        <option value="$PROJECT_DIR$/addition/Database.php" />
         <option value="$PROJECT_DIR$/addition/Storage.php" />
+        <option value="$PROJECT_DIR$/addition/Database.php" />
       </list>
     </option>
   </component>
@@ -311,12 +313,12 @@
       <workItem from="1605013733662" duration="7387000" />
       <workItem from="1605082773634" duration="5530000" />
       <workItem from="1605092521685" duration="32710000" />
-      <workItem from="1605249336406" duration="18221000" />
+      <workItem from="1605249336406" duration="20691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63848000" />
+    <option name="totallyTimeSpent" value="66318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -579,42 +581,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beejee.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addition/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <marker date="1605268999315" expanded="true" signature="2937:2996" ph="SELECT id, n... tasks" />
-            <marker date="1605268999315" expanded="true" signature="2937:2997" ph="SELECT id, n... tasks" />
-            <marker date="1605268999315" expanded="true" signature="2937:3015" ph="SELECT id, n... tasks" />
-            <marker date="1605268999315" expanded="true" signature="2937:3016" ph="SELECT id, n... tasks" />
-            <marker date="1605268999315" expanded="true" signature="2937:3030" ph="SELECT id, n... tasks" />
-            <marker date="1605268999315" expanded="true" signature="3112:3150" ph="SELECT COUNT... tasks" />
-            <marker date="1605268999315" expanded="true" signature="3389:3436" ph="INSERT INTO tasks... " />
-            <marker date="1605268999315" expanded="true" signature="3389:3471" ph="INSERT INTO tasks... " />
-            <marker date="1605268999315" expanded="true" signature="3389:3486" ph="INSERT INTO tasks... " />
-            <marker date="1605268999315" expanded="true" signature="3647:3686" ph="UPDATE tasks... " />
-            <marker date="1605268999315" expanded="true" signature="3647:3697" ph="UPDATE tasks... " />
-            <marker date="1605268999315" expanded="true" signature="3647:3698" ph="UPDATE tasks... " />
-            <marker date="1605268999315" expanded="true" signature="3653:3686" ph="INSERT INTO tasks... " />
-            <marker date="1605268999315" expanded="true" signature="3917:3970" ph="UPDATE tasks... " />
-            <marker date="1605268999315" expanded="true" signature="4214:4273" ph="UPDATE tasks... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/DB.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="73" selection-end-line="0" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beejee.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -624,6 +602,30 @@
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addition/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="156" column="1" lean-forward="true" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
+          <folding>
+            <marker date="1605278447280" expanded="true" signature="2937:2996" ph="SELECT id, n... tasks" />
+            <marker date="1605278447280" expanded="true" signature="2937:2997" ph="SELECT id, n... tasks" />
+            <marker date="1605278447280" expanded="true" signature="2937:3015" ph="SELECT id, n... tasks" />
+            <marker date="1605278447280" expanded="true" signature="2937:3016" ph="SELECT id, n... tasks" />
+            <marker date="1605278447280" expanded="true" signature="2937:3030" ph="SELECT id, n... tasks" />
+            <marker date="1605278447280" expanded="true" signature="3112:3150" ph="SELECT COUNT... tasks" />
+            <marker date="1605278447280" expanded="true" signature="3544:3591" ph="INSERT INTO tasks... " />
+            <marker date="1605278447280" expanded="true" signature="3544:3626" ph="INSERT INTO tasks... " />
+            <marker date="1605278447280" expanded="true" signature="3544:3641" ph="INSERT INTO tasks... " />
+            <marker date="1605278447280" expanded="true" signature="3924:3963" ph="UPDATE tasks... " />
+            <marker date="1605278447280" expanded="true" signature="3924:3974" ph="UPDATE tasks... " />
+            <marker date="1605278447280" expanded="true" signature="3924:3975" ph="UPDATE tasks... " />
+            <marker date="1605278447280" expanded="true" signature="3930:3963" ph="INSERT INTO tasks... " />
+            <marker date="1605278447280" expanded="true" signature="4283:4336" ph="UPDATE tasks... " />
+            <marker date="1605278447280" expanded="true" signature="4669:4728" ph="UPDATE tasks... " />
+          </folding>
         </state>
       </provider>
     </entry>

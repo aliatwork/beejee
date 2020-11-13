@@ -115,22 +115,28 @@ class Database
 
     public function addTask($name, $email, $text)
     {
-        $name = strip_tags($name);
-        $email = strip_tags($email);
-        $text = strip_tags($text);
+        $this->connect();
+        $name = $this->conn->real_escape_string(strip_tags($name));
+        $email = $this->conn->real_escape_string(strip_tags($email));
+        $text = $this->conn->real_escape_string(strip_tags($text));
+        $this->conn->close();
         return $this->execute("INSERT INTO tasks (name, email, text) VALUES ('" . $name . "', '" . $email . "', '" . $text . "')");
     }
 
     public function changeTaskText($id, $text)
     {
-        $id = strip_tags($id);
-        $text = strip_tags($text);
+        $this->connect();
+        $id = $this->conn->real_escape_string(strip_tags($id));
+        $text = $this->conn->real_escape_string(strip_tags($text));
+        $this->conn->close();
         return $this->execute("UPDATE tasks SET text = '" . $text . "' WHERE id = " . $id);
     }
 
     public function completeTask($id, $check)
     {
-        $id = strip_tags($id);
+        $this->connect();
+        $id = $this->conn->real_escape_string(strip_tags($id));
+        $this->conn->close();
         if (in_array($check, [self::STATE_COMPLETED, self::STATE_NOT_COMPLETED])) {
             return $this->execute("UPDATE tasks SET state = '" . $check . "' WHERE id = " . $id);
         }
@@ -139,7 +145,9 @@ class Database
 
     public function checkTask($id, $check)
     {
-        $id = strip_tags($id);
+        $this->connect();
+        $id = $this->conn->real_escape_string(strip_tags($id));
+        $this->conn->close();
         if (in_array($check, [self::STATE_CHECKED, self::STATE_NOT_CEHCKED])) {
             return $this->execute("UPDATE tasks SET check_state = '" . $check . "' WHERE id = " . $id);
         }
